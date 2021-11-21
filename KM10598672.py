@@ -1,3 +1,6 @@
+# My GitHub repository 
+# https://github.com/10598672/CA1_10598672.git 
+
 # Employee Class
 class Employee:
     
@@ -34,14 +37,14 @@ class Employee:
 
 
 # To open Employees.txt file
-with open('/Users/keanemoya/Desktop/Programming_CA/Employee.txt') as employeeFile:
+with open('Employee.txt') as employeeFile:
     employees = []
     for line in employeeFile:
         details = tuple(line.split(' '))
         employees.append(Employee( * details))
 
 # To open Hours.txt file
-with open('/Users/keanemoya/Desktop/Programming_CA/Hours.txt') as hours:
+with open('Hours.txt') as hours:
     for line in hours:
         line = line.split(" ")
         StaffID = eval(line[0])
